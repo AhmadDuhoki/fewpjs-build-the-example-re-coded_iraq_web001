@@ -1,4 +1,3 @@
-// Defining text characters for the empty and full hearts for you to use later.
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
@@ -33,11 +32,6 @@ function likeCallback(e) {
 for (let glyph of articleHearts) {
   glyph.addEventListener("click", likeCallback);
 }
-
-
-//------------------------------------------------------------------------------
-// Ignore after this point. Used only for demo purposes
-//------------------------------------------------------------------------------
 
 function mimicServerCall(url="http://mimicServer.example.com", config={}) {
   return new Promise(function(resolve, reject) {
