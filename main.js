@@ -29,6 +29,10 @@ for (let glyph of articleHearts) {
   glyph.addEventListener("click", likeCallback);
 }
 
+function hideModal() {
+  errorModal.classList.add('hidden');
+}
+
 function mimicServerCall(url="http://mimicServer.example.com", config={}) {
   return new Promise(function(resolve, reject) {
     setTimeout(function() {
